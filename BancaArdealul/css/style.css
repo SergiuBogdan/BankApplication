@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --color-in: #d6bbbb;
+  --color-out: #df405a;
+  --color-bg-1: rgba(255, 255, 255, 0.75);
+  --color-bg-2: rgba(194, 194, 194, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-bg-1),
+    var(--color-bg-2)
+  );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  color: #363940;
+}
+
+.icon {
+  width: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.btn__login,
+.btn__logout {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn__logout {
+  display: none;
+}
+
+.btn__login:active,
+.btn__logout:active {
+  transform: scale(1.1);
+}
+
+.logo img {
+  width: 200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.current__balance {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.section__i {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* History Transactions */
+.history__transactions {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+
+  background-color: #f0fff3;
+  overflow: scroll;
+  box-shadow: inset 0px 11px 8px -10px #ccc, inset 0px -11px 8px -10px #ccc;
+}
+
+.history__row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  border-bottom: 1px solid #e2ddac;
+  padding: 01rem;
+}
+
+.history__value {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.type__deposit {
+  background-color: var(--color-in);
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.6rem;
+  text-transform: uppercase;
+}
+
+.type__withdrawal {
+  background-color: var(--color-out);
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.6rem;
+  text-transform: uppercase;
+}
+
+/* Summary */
+.summary {
+  /* width: 500px; */
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  gap: 1rem;
+}
+
+.summary_value {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.summary button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.value__in {
+  color: var(--color-in);
+}
+
+.value__out {
+  color: var(--color-out);
+}
+
+.section_ii {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section_ii h3 {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.operation {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.operation input {
+  padding: 0.4rem;
+  margin: 0.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+.operation button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.operation__transfer {
+  background-image: linear-gradient(to top, #96e4df 0%, #4dccc6 100%);
+}
+
+.operation__close {
+  background-image: linear-gradient(to top, #0bab64 0%, #3bb78f 100%);
+}
+
+.operation__add {
+  background-image: linear-gradient(to top, #ffdd00 0%, #fbb034 100%);
+}
+
+/* Widget Crypto */
+
+.widget__crypto {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.crypto {
+  display: flex;
+  gap: 0.2rem;
+  font-weight: 700;
+}
+
+.crypto img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 985px) {
+  .widget__crypto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .welcome__message {
+    font-size: 1rem;
+  }
+
+  .div-2 img {
+    width: 150px;
+  }
+
+  .info h2 {
+    font-size: 1rem;
+  }
+
+  .info h3 {
+    font-size: 0.8rem;
+  }
+
+  .info p {
+    font-size: 0.6rem;
+  }
+
+  .info > li {
+    font-size: 0.6rem;
+  }
+
+  .current__balance {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .text__balance {
+    text-align: center;
+  }
+
+  .text__balance h3 {
+    font-size: 1rem;
+  }
+
+  .text__balance p {
+    font-size: 1rem;
+  }
+
+  .balance {
+    font-size: 1rem;
+  }
+
+  .history__transactions {
+    margin: 0 auto;
+  }
+
+  .operation h3 {
+    font-size: 1rem;
+  }
+
+  .summary {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .operation form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.div-principal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.div-4 {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: #5ec576;
+  width: 10rem;
+}

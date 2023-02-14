@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Banca Ardealul S.R.L</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn" href="./BancaArdealul/bank.html"
+              >Open Bank App</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Banking
+          <!-- Green highlight effect -->
+          <span class="highlight">with us:</span>
+          <br />A Trustworthy<br />
+          <span class="highlight">Financial Partner</span>
+        </h1>
+        <h4>Your Future Starts Here.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img src="img/hero.png" class="header__img" alt="BankItems" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Offering services such as online banking, bill pay, money transfers,
+          investment options, and more.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+
+          <h5 class="features__header">Savings Accounts:</h5>
+          <p>
+            Most banks offer savings accounts to help customers accumulate funds
+            for future use. These accounts usually pay interest, allowing
+            customers to grow their savings over time.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Checking Accounts:</h5>
+          <p>
+            Checking accounts are designed for customers to use their money for
+            day-to-day expenses. These accounts usually come with a debit card
+            and checks for easy access to funds.
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Online Banking:</h5>
+          <p>
+            Many banks now offer online banking services that enable customers
+            to manage their accounts from any computer or mobile device.
+            Customers can check their balances, transfer funds, and pay bills
+            without ever leaving home.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">
+          In addition to its network of branches, the Bank has a wide network of
+          ATMs and Point of Sale (POS) terminals.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Instant Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Instant Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Instant Closing
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Tranfser money to anyone in the world.
+          </h5>
+          <p>
+            Bank instant transfers allow customers to move funds from their bank
+            accounts to their PayPal accounts instantly. Customers can do this
+            by providing their bank account information and verifying the
+            transfer with their bank. Once the transfer is complete, the funds
+            will be available immediately in their PayPal account.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            With us you can buy whatever you dream of.
+          </h5>
+          <p>
+            Paytm Money offers an instant loan facility. Through this, an
+            individual can get a loan of up $50.000 within minutes. The loan can
+            be availed without security or collateral. The repayment period is
+            flexible and you can choose to repay the loan in 3, 6 or 12 months.
+            This loan can be used for various purposes such as medical expenses,
+            home renovation, tuition fees and more. You can apply for a loan
+            online through the Paytm Money app or website.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account? No problem! Close it instantly.
+          </h5>
+          <p>
+            You Can Secure Your Money: Close Your Bank Account With One Click"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Some banks offer lines of credit or loans that you can use to make
+          purchases or pay for large expenses.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best financial decision ever!</h5>
+            <blockquote class="testimonial__text">
+              The best financial decision ever made is to start saving and
+              investing early. Starting early gives you the advantage of
+              compound interest, which allows your money to grow exponentially
+              over time. Additionally, it helps you to build financial security
+              and reach your financial goals sooner. Investing in a
+              well-diversified portfolio of stocks, bonds, and other assets can
+              help you to maximize your returns and minimize risk over the long
+              term. All with Banca Ardeal
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Alin Popescu</h6>
+              <p class="testimonial__location">Cluj Napoca</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">The best decision ever</h5>
+            <blockquote class="testimonial__text">
+              The best financial decision I ever made was to start investing in
+              stocks and mutual funds. By investing in stocks, I was able to
+              diversify my portfolio and increase the potential for returns over
+              time. I also began to practice dollar-cost averaging, meaning that
+              I invested a set amount of money each month into the market
+              regardless of the current prices. This allowed me to average out
+              my purchase costs and limit the time I was exposed to market
+              volatility. By taking this approach, I was able to build a strong
+              portfolio that has provided me with a steady stream of income over
+              the years.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Alexandra Oroian</h6>
+              <p class="testimonial__location">Baia Mare</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Finally a bank that you can trust!
+            </h5>
+            <blockquote class="testimonial__text">
+              The best financial decision depends on an individual's unique
+              financial situation and goals. Generally, the best financial
+              decision someone can make is to save for the future by creating a
+              budget, paying off debt, and investing for retirement. Other wise
+              financial decisions include reducing unnecessary expenses, taking
+              advantage of tax-advantaged accounts, and researching and
+              comparing financial products to find the best deals.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Dobrin Georgescu</h6>
+              <p class="testimonial__location">Oradea</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/logo.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+        ></a>
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

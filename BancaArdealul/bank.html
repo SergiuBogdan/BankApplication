@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Banca Ardeal</title>
+</head>
+<body>
+    <header>
+        <nav class="div-principal">
+            <button class="btn__logout div-4">Logout</button>
+                
+           
+            
+            <div class="div-1">
+                
+                <h2 class="welcome__message">Login in with your credentials</h2>
+            </div>
+            
+            <div class="logo div-2">
+                <img src="./assets/logo.png">
+            </div>
+
+            <div class="login__form div-3">
+                <input type="text" class="input__user" placeholder="Username">
+                <input type="password" class="input__pass" placeholder="Password">
+                <button class="btn__login">&#10149;</button>
+            </div>
+
+            
+            
+            <section class="info div-5">
+        
+                <h3>What is on this website is fictional</h3>
+                <br>
+                <h2>For login use this 4 accounts</h2>
+                <h5>
+                    <li>user: cs - pass: 1111</li>
+                    <li>user: ou - pass: 2222</li>
+                    <li>user: bs - pass: 3333</li>
+                    <li>user: lm - pass: 4444</li>
+               </h5>
+        
+            </section>
+        
+        </nav>
+    </header>
+
+   
+
+    <section>
+
+    </section>
+
+
+    <section class="current__balance">
+        <div class="text__balance">
+            <h3>Current balance</h3>
+            <p class="label__date">As of 17/02/2022</p>
+        </div>
+        <h3 class="balance">0000<img class="icon" src="./assets/dollaricon.png"></h3>
+    </section>
+
+    <main class="app">
+
+        <!-- History Transactions -->
+        <div class="section__i">
+            <div class="history__transactions">
+                <div class="history__row">
+                    <div class="history__type type__deposit">1 DEPOSIT</div>
+                    <div class="history__date">2 DAYS AGO</div>
+                    <div class="history__value">34 <img class="icon" src="./assets/dollaricon.png"></div>
+                </div>
+                <div class="history__row">
+                    <div class="history__type type__withdrawal">1 WITHDRAWAL</div>
+                    <div class="history__date">10/02/2022</div>
+                    <div class="history__value">-12 <img class="icon" src="./assets/dollaricon.png"></div>
+                </div>
+            </div>
+
+
+            <!-- Summary -->
+            <div class="summary">
+                <div class="summary_label">In</div>
+                <div class="summary_value value__in">000 <img class="icon" src="./assets/dollaricon.png"></div>
+                <div class="summary_label">Out</div>
+                <div class="summary_value value__out">000 <img class="icon" src="./assets/dollaricon.png"></div>
+                <button class="btn__sort">Sort &darr;</button>
+            </div>
+        </div>
+
+
+        <!-- Operations -->
+        <div class="section_ii">
+            <div class="operation operation__transfer">
+                <h3>Transfer <img class="icon" src="./assets/dollaricon.png"></h3>
+                <form>
+                    <input type="text" class="form__input form__to">
+                    <label>Transfer to</label>
+                    <input type="number" class="form__input form__value--amount">
+                    <label>Amount</label><br>
+                    <button class="btn__transfer--to">&#10149;</button>
+                </form>
+            </div>
+
+            <!-- ADD -->
+            <div class="section_ii">
+                <div class="operation operation__add">
+                    <h3>Add <img class="icon" src="./assets/dollaricon.png"></h3>
+                    <form>
+                        <input type="number" class="form__input form__value--add">
+                        <label>Amount</label><br>
+                        <button class="btn__add">&#10149;</button>
+                        <p>* you can add double of the max transfer. Ex. Max transfer present: 50 = Max add 100</p>
+                    </form>
+                </div>
+
+            <!-- Close Account -->
+            <div class="operation operation__close">
+                <h3>Close account</h3>
+                <form>
+                    <input type="text" class="form__input form__close--user">
+                    <label>Confirm user</label>
+                    <input type="password" class="form__input form__close--pass">
+                    <label>Confirm pass</label><br>
+                    <button class="btn__close">&#10149;</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
